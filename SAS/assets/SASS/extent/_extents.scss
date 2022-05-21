@@ -1,0 +1,173 @@
+#html {
+    ::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $color-first;
+        border: 1px solid $color-black;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        color: $color-bg;
+        background-color: $color-second;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $color-second;
+    }
+}
+
+#body {
+    height: 100vh;
+    background-color: $color-bg;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+    }
+
+    scroll-behavior: smooth;
+}
+
+#transition {
+    transition: all 0.3s;
+}
+
+#scrollTop {
+
+    .scrollTop {
+        @extend #transition;
+        z-index: 1;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 3px 5px;
+        color: $color-first;
+        border-radius: 7px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+        background-color: $color-first;
+        color: $color-second;
+
+        &:hover {
+            background-color: $color-second;
+            color: $color-white;
+        }
+
+        i {
+            margin: 2px;
+        }
+    }
+}
+
+#header {
+    .header {
+        font-weight: bold;
+        margin-left: 10%;
+        border-left: 2px solid $color-first;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+}
+
+#cards {
+    .cards {
+        margin-top: 2%;
+        text-align: center;
+
+        .card {
+            border: none;
+            margin-left: 2%;
+            width: 210px;
+            margin-bottom: 2%;
+            display: inline-block;
+
+            .card-body {
+                @extend #transition;
+                background-color: $color-first;
+                border-radius: 5px;
+                box-shadow: 0 0 30px $color-black;
+                padding: 0;
+
+                &:hover {
+                    background-color: $color-second;
+                }
+
+                .logo {
+                    position: relative;
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+                    @extend #transition;
+
+                    img {
+                        object-fit: cover;
+                        height: 180px;
+                        width: 100%;
+                        display: block;
+                        border-radius: 5px 5px 0px 0px;
+
+                    }
+
+                    &:hover {
+                        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                    }
+                }
+
+                .details {
+                    text-align: start;
+                    color: $text-color;
+
+                    .body-1 {
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+
+                    .body-2 {
+                        padding-left: 10px;
+                        padding-top: 7px;
+                        padding-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        span {
+                            text-align: center;
+                            padding: 5px;
+                            border-radius: 20px;
+                            color: $color-first;
+                            background-color: $color-yellow;
+                        }
+
+                        .btn-fav {
+                            border: none;
+                            background: none;
+                            color: $text-color;
+                            @extend #transition;
+                            font-size: 25px;
+                            text-align: center;
+                            margin-right: 5px;
+
+                            &:hover {
+                                color: $color-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // @media (max-width: 450px) {
+    //     .cards {
+    //         width: 16px;
+    //     }
+    // }
+}
+
+#top {
+    margin-top: 20px;
+}

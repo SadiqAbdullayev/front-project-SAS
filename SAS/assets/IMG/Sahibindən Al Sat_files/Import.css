@@ -1,0 +1,199 @@
+#html ::-webkit-scrollbar, html ::-webkit-scrollbar {
+  width: 1vw;
+}
+
+#html ::-webkit-scrollbar-thumb, html ::-webkit-scrollbar-thumb {
+  background-color: #2C2C2C;
+}
+
+#html ::-webkit-scrollbar-thumb:hover, html ::-webkit-scrollbar-thumb:hover {
+  color: #E5E5E5;
+  background-color: #3B4D59;
+}
+
+#html ::-webkit-scrollbar-track, html ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #3B4D59;
+          box-shadow: inset 0 0 5px #3B4D59;
+}
+
+#body, body {
+  height: 100vh;
+  background-color: #E5E5E5;
+  scroll-behavior: smooth;
+}
+
+#body a, body a {
+  text-decoration: none;
+}
+
+#body li, body li {
+  list-style: none;
+  display: inline;
+}
+
+#transition, #scrollTop .scrollTop, html .scrollTop, html, .navbar-1 .nav .nav-links a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#scrollTop .scrollTop, html .scrollTop {
+  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 3px 5px;
+  color: #2C2C2C;
+  border-radius: 7px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2C2C2C;
+  color: #3B4D59;
+}
+
+#scrollTop .scrollTop:hover, html .scrollTop:hover {
+  background-color: #3B4D59;
+  color: #E5E5E5;
+}
+
+#scrollTop .scrollTop i, html .scrollTop i {
+  margin: 2px;
+}
+
+.navbar-1 {
+  padding: 0;
+  background-color: #2C2C2C;
+}
+
+.navbar-1 .nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-1 .nav .nav-header {
+  display: inline;
+}
+
+.navbar-1 .nav .nav-header .nav-title {
+  display: inline-block;
+}
+
+.navbar-1 .nav .nav-header .nav-title img {
+  height: 50px;
+  padding: 5px;
+}
+
+.navbar-1 .nav .nav-btn {
+  display: none;
+}
+
+.navbar-1 .nav .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.navbar-1 .nav .nav-links a {
+  display: inline-block;
+  padding: 12px 10px 11px 10px;
+  text-decoration: none;
+  color: #E5E5E5;
+}
+
+.navbar-1 .nav .nav-links a:hover {
+  background-color: #3B4D59;
+}
+
+.navbar-1 .nav #nav-check {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar-1 .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar-1 .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar-1 .nav > .nav-btn > label:hover,
+  .navbar-1 .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-1 .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navbar-1 .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar-1 .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar-1 .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .navbar-1 .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.navbar-2 {
+  margin-top: 20px;
+}
+
+.navbar-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-2 .container form {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-2 .container form input {
+  border: none;
+  outline: none;
+  width: 500px;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.navbar-2 .container form button {
+  background-color: white;
+  padding: 13px;
+  border: none;
+  width: 54px;
+}
+/*# sourceMappingURL=Import.css.map */
