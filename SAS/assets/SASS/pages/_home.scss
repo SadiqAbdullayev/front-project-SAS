@@ -91,19 +91,6 @@ body {
     }
 }
 
-#carousel {
-    .carousel {
-
-        // height: 150px;
-        .carousel-inner {
-            img {
-                height: 300px;
-                object-fit: cover
-            }
-        }
-    }
-}
-
 #img-grid {
     @extend #top;
     @extend #bottom;
@@ -201,12 +188,15 @@ body {
             font-size: 25px;
             font-weight: bold;
             margin-bottom: 30px;
+            text-decoration: underline;
         }
 
         .row {
+
             div {
                 display: flex;
                 justify-content: space-between;
+                justify-content: center;
                 margin-bottom: 20px;
 
                 .card {
@@ -251,6 +241,60 @@ body {
                 text-decoration: underline;
                 border: none;
                 background: none;
+            }
+        }
+    }
+}
+
+#best-seller {
+    background-color: $color-first;
+    @extend #top;
+    @extend #bottom;
+
+    .container {
+        .header {
+            color: $text-color;
+            font-size: 25px;
+            padding-top: 25px;
+            text-decoration: underline;
+        }
+
+        .row {
+            div {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                .card {
+                    margin: 0;
+                    border: none;
+
+                    img {
+                        object-fit: cover;
+                        width: auto;
+
+                        height: 500px;
+                    }
+
+                    .card-body {
+                        margin: 0;
+                        background-color: $btn-color;
+                        height: 100px;
+
+                        h3 {
+                            color: $text-color;
+                            font-weight: 100;
+                        }
+
+                        .first-txt {
+                            margin-top: -55px;
+                            font-size: 30px;
+                        }
+
+                        .second-txt {
+                            font-size: 15px;
+                        }
+                    }
+                }
             }
         }
     }

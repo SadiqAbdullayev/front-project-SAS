@@ -1,8 +1,8 @@
-#top, #img-grid {
+#top, #img-grid, #best-seller {
   margin-top: 50px;
 }
 
-#bottom, #img-grid {
+#bottom, #img-grid, #best-seller {
   margin-bottom: 50px;
 }
 
@@ -151,12 +151,6 @@
   font-size: 20px;
 }
 
-#carousel .carousel .carousel-inner img {
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 #img-grid .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +249,7 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 30px;
+  text-decoration: underline;
 }
 
 #popular .container .row div {
@@ -264,6 +259,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -311,5 +309,53 @@
   text-decoration: underline;
   border: none;
   background: none;
+}
+
+#best-seller {
+  background-color: #2C2C2C;
+}
+
+#best-seller .container .header {
+  color: #ffffff;
+  font-size: 25px;
+  padding-top: 25px;
+  text-decoration: underline;
+}
+
+#best-seller .container .row div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#best-seller .container .row div .card {
+  margin: 0;
+  border: none;
+}
+
+#best-seller .container .row div .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 500px;
+}
+
+#best-seller .container .row div .card .card-body {
+  margin: 0;
+  background-color: #3B4D59;
+  height: 100px;
+}
+
+#best-seller .container .row div .card .card-body h3 {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+#best-seller .container .row div .card .card-body .first-txt {
+  margin-top: -55px;
+  font-size: 30px;
+}
+
+#best-seller .container .row div .card .card-body .second-txt {
+  font-size: 15px;
 }
 /*# sourceMappingURL=import.css.map */
