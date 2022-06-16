@@ -7,8 +7,7 @@ body {
     @extend #transition;
     @extend #body;
 }
-
-
+    
 .navbar-header {
     background-color: $color-first;
     border-bottom: 2px solid $color-second;
@@ -48,6 +47,11 @@ body {
 
                     span {
                         color: $text-color;
+                    }
+                }
+                .man{
+                    span{
+                        text-decoration: underline;
                     }
                 }
             }
@@ -110,7 +114,6 @@ body {
         }
     }
 }
-
 
 #img-grid {
     @extend #top;
@@ -307,60 +310,6 @@ body {
     }
 }
 
-#best-seller {
-    background-color: $color-first;
-    @extend #top;
-    @extend #bottom;
-
-    .container {
-        .header {
-            color: $text-color;
-            font-size: 25px;
-            padding-top: 25px;
-            text-decoration: underline;
-        }
-
-        .row {
-            div {
-                margin-top: 20px;
-                margin-bottom: 20px;
-
-                .card {
-                    margin: 0;
-                    border: none;
-
-                    img {
-                        object-fit: cover;
-                        width: auto;
-
-                        height: 400px;
-                    }
-
-                    .card-body {
-                        margin: 0;
-                        background-color: $btn-color;
-                        height: 100px;
-
-                        h3 {
-                            color: $text-color;
-                            font-weight: 100;
-                        }
-
-                        .first-txt {
-                            margin-top: -55px;
-                            font-size: 30px;
-                        }
-
-                        .second-txt {
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 #follow-us {
     @extend #bottom;
 
@@ -404,39 +353,8 @@ body {
     }
 }
 
-#sent-email {
-    @extend #bottom;
-
-    .container {
-        .row {
-            form {
-                text-align: center;
-
-                input {
-                    outline: none;
-                    width: 100%;
-                    border: 1px solid $color-first;
-                    padding: 15px;
-                    font-size: 14px;
-
-                }
-
-                button {
-                    margin-top: 10px;
-                    width: 100%;
-                    border: none;
-                    font-weight: 100;
-                    background-color: $btn-color;
-                    color: $text-color;
-                    align-items: center;
-                    padding: 10px;
-                }
-            }
-        }
-    }
-}
-
 .ftr {
+    @extend #top;
     padding: 30px;
     background-color: $color-first;
 
@@ -468,23 +386,5 @@ body {
 
     .right {
         text-align: end;
-    }
-}
-
-@media (max-width: 600px) {
-    .navbar-header {
-
-
-        .container {
-            .row {
-                .img-logo {
-                    display: flex;
-
-                    span {
-                        font-size: 12px
-                    }
-                }
-            }
-        }
     }
 }
